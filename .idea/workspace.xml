@@ -66,6 +66,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/nav.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/page.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/showMap.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/demo/controler/AirPathController.class" afterPath="$PROJECT_DIR$/target/classes/cn/demo/controler/AirPathController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webutm/WEB-INF/classes/cn/demo/controler/AirPathController.class" afterPath="$PROJECT_DIR$/target/webutm/WEB-INF/classes/cn/demo/controler/AirPathController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/WEB-INF/jsp/nav.jsp" afterPath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/WEB-INF/jsp/nav.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/css/nav.css" afterPath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/css/nav.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/css/page/instrumentPanel.css" afterPath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/css/page/instrumentPanel.css" />
@@ -73,8 +75,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/echarts/echartdemo.js" afterPath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/echarts/echartdemo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/menu.js" afterPath="$PROJECT_DIR$/../LuckyWing/src/main/webapp/js/menu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/demo/controler/AirPathController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/demo/controler/AirPathController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webutm/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/webutm/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="webutm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,8 +108,8 @@
       <file leaf-file-name="AirPathController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/demo/controler/AirPathController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="502">
+              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -915,7 +915,7 @@
       <workItem from="1504071027099" duration="751000" />
       <workItem from="1504074338385" duration="1721000" />
       <workItem from="1504082100006" duration="1937000" />
-      <workItem from="1504141044049" duration="1068000" />
+      <workItem from="1504141044049" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="xiaoming  fork">
       <created>1503365388879</created>
@@ -987,11 +987,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504003447794</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="tijian 1111111">
+      <created>1504142165752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1504142165752</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46154000" />
+    <option name="totallyTimeSpent" value="46283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1088,7 +1095,8 @@
     <MESSAGE value="添加了飞行计划增删改2" />
     <MESSAGE value="添加增删改页面" />
     <MESSAGE value="完善页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善页面" />
+    <MESSAGE value="tijian 1111111" />
+    <option name="LAST_COMMIT_MESSAGE" value="tijian 1111111" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1476,8 +1484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/demo/controler/AirPathController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="502">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
           <folding />
         </state>
       </provider>
