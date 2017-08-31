@@ -29,6 +29,21 @@ public class AirPathController {
     @ResponseBody
     @RequestMapping(value = "/save_apData",method = {RequestMethod.POST,RequestMethod.GET})
     public String save_apDate(@RequestBody AirPath airPath){
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
+        System.out.println(111111111);
         airPathService.save_apData(airPath);
         return "success";
     }
