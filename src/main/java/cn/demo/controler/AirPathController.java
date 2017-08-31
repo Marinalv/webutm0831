@@ -36,14 +36,6 @@ public class AirPathController {
         System.out.println(111111111);
         System.out.println(111111111);
         System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
-        System.out.println(111111111);
         airPathService.save_apData(airPath);
         return "success";
     }

@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/nav.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/Table.css"/>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
     <script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
 </head>
 <body>
@@ -24,16 +24,21 @@
 <div class="content-wrap " >
     <div class="content" id="change">
         <section class="content-header">
-            <h3>
-                列表
-                <small>添加飞行计划,向前</small>
+            <h3>添加飞行计划
+                <ul class="toplist">
+                    <li class="topnav">
+                        <a href="">Home /</a>
+                    </li>
+                    <li>
+                        <a href="">添加飞行计划</a>
+                    </li>
+                </ul>
             </h3>
         </section>
         <section class="content ">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    添加飞行计划|
-                    <small>>首页</small>
+                    添加飞行计划
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive box-default form-inline no-footer scoller">
@@ -44,36 +49,36 @@
                                     <table style="margin:0 auto;width:40%;">
                                         <tr>
                                             <td>开始日期</td>
-                                            <td><input type="text" readonly="readonly" class="Wdate form-control" name="startDate" onfocus="WdatePicker()"></td>
+                                            <td><input type="text" readonly="readonly" class="form" name="startDate" onfocus="WdatePicker()"></td>
                                         </tr>
                                         <tr>
                                             <td>结束日期</td>
-                                            <td><input type="text" readonly="readonly" class="Wdate form-control" name="endDate" onfocus="WdatePicker()"></td>
+                                            <td><input type="text" readonly="readonly" class="form" name="endDate" onfocus="WdatePicker()"></td>
                                         </tr>
                                         <tr>
                                             <td>开始地点</td>
-                                            <td><input type="text" name="startPoint" class="form-control"></td>
+                                            <td><input type="text" name="startPoint" class="form"></td>
                                         </tr>
                                         <tr>
                                             <td>结束地点</td>
-                                            <td><input type="text" name="endPoint" class="form-control"></td>
+                                            <td><input type="text" name="endPoint" class="form"></td>
                                         </tr>
                                         <tr>
                                             <td>飞行高度</td>
-                                            <td><input type="number" name="flightHeight" class="form-control"></td>
+                                            <td><input type="number" name="flightHeight" class="form"></td>
                                         </tr>
                                         <tr>
                                             <td>飞行描述</td>
-                                            <td><textarea name="description" cols="30" rows="10" class=""></textarea></td>
+                                            <td><textarea  name="description" cols="30" rows="10"></textarea></td>
                                         </tr>
                                         <tr>
                                             <td>申请日期</td>
-                                            <td><input type="text" readonly="readonly" class="Wdate form-control" name="applyDate" onfocus="WdatePicker()"></td>
+                                            <td><input type="text" readonly="readonly" class="form" name="applyDate" onfocus="WdatePicker()"></td>
                                         </tr>
                                         <tr>
-                                            <td>飞机编号</td>
+                                            <td>飞机品牌</td>
                                             <td>
-                                                <select name="uavId" id="" class="form-control">
+                                                <select name="uavId" id="" class="form">
                                                     <option value="1" selected="selected">大疆无人机1</option>
                                                     <option value="2">大疆无人机2</option>
                                                     <option value="3">大疆无人机3</option>
@@ -84,11 +89,13 @@
                                             <td><input type="hidden" value="2" name="userId"></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2"><input type="submit" value="保存" class="layui-btn"></td>
+                                            <td colspan="1"><input type="submit" value="保存" class="layui-btn"></td>
+                                            <td colspan="1"><input type="button" value="返回" class="layui-btn"  onClick="javascript :history.back(-1);"></td>
+
                                         </tr>
                                     </table>
-                                <%--<button class="layui-btn">确定</button>--%>
-                                <%--<button class="layui-btn">返回</button>--%>
+                                    <%--<button class="layui-btn">确定</button>--%>
+                                    <%--<button class="layui-btn">返回</button>--%>
                                 </form>
                             </div>
 

@@ -242,7 +242,18 @@ body,
 #nav .nav-right .envelope:hover{
     color:#2d9f6e;
 }
+#nav .nav-right .user{
+    width:40px;
+    position:relative;
+    transition:all .5s ease;
 
+}
+#nav .nav-right .user:hover{
+    color:#2d9f6e;
+}
+.user-a {
+    color:#ffffff;
+}
 #nav .nav-right .personalImage{
     display:inline-block;
     width:66px;
@@ -260,7 +271,6 @@ body,
     position:fixed;
     top:60px;
     left:0;
-    /*padding:15px 0;*/
     background-color: #FFFFFF;
     height:100%;
     overflow:auto;

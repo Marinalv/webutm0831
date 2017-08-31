@@ -45,36 +45,36 @@
                                     <table style="margin:0 auto;width:40%;">
                                         <tr>
                                             <td>开始日期</td>
-                                            <td><input type="text" readonly="readonly" class="Wdate"  name="startDate" value="<fmt:formatDate value='${flightPlan.startDate}' pattern='yyyy-MM-dd'/>"></td>
+                                            <td><input type="text" readonly="readonly" class="form"  name="startDate" value="<fmt:formatDate value='${flightPlan.startDate}' pattern='yyyy-MM-dd'/>"></td>
                                         </tr>
                                         <tr>
                                             <td>结束日期</td>
-                                            <td><input type="text" readonly="readonly" class="Wdate" name="endDate" value="<fmt:formatDate value='${flightPlan.endDate}' pattern='yyyy-MM-dd'/>"></td>
+                                            <td><input type="text" readonly="readonly" class="form" name="endDate" value="<fmt:formatDate value='${flightPlan.endDate}' pattern='yyyy-MM-dd'/>"></td>
                                         </tr>
                                         <tr>
                                             <td>开始地点</td>
-                                            <td><input type="text" name="startPoint" value="${flightPlan.startPoint}"></td>
+                                            <td><input type="text"  class="form" name="startPoint" value="${flightPlan.startPoint}"></td>
                                         </tr>
                                         <tr>
                                             <td>结束地点</td>
-                                            <td><input type="text" name="endPoint" value="${flightPlan.endPoint}"></td>
+                                            <td><input type="text" class="form"  name="endPoint" value="${flightPlan.endPoint}"></td>
                                         </tr>
                                         <tr>
                                             <td>飞行高度</td>
-                                            <td><input type="number" name="flightHeight" readonly="readonly" value="${flightPlan.flightHeight}"></td>
+                                            <td><input type="number"  class="form" name="flightHeight" readonly="readonly" value="${flightPlan.flightHeight}"></td>
                                         </tr>
                                         <tr>
                                             <td>飞行描述</td>
-                                            <td><textarea name="description" readonly="readonly" cols="30" rows="10" value="">${flightPlan.description}</textarea></td>
+                                            <td><textarea class="form"  name="description" readonly="readonly" cols="30" rows="10" value="">${flightPlan.description}</textarea></td>
                                         </tr>
                                         <tr>
                                             <td>申请日期</td>
-                                            <td><input type="text" readonly="readonly" name="applyDate" value="<fmt:formatDate value='${flightPlan.applyDate}' pattern='yyyy-MM-dd'/>"></td>
+                                            <td><input type="text" readonly="readonly"  class="form" name="applyDate" value="<fmt:formatDate value='${flightPlan.applyDate}' pattern='yyyy-MM-dd'/>"></td>
                                         </tr>
                                         <tr>
-                                            <td>飞机编号</td>
+                                            <td>飞机品牌</td>
                                             <td>
-                                                <select name="uavId" id="" readonly="readonly">
+                                                <select class="form"  name="uavId" id="" readonly="readonly">
                                                     <option value="1" selected="selected">大疆无人机1</option>
                                                     <option value="2">大疆无人机2</option>
                                                     <option value="3">大疆无人机3</option>
@@ -82,9 +82,12 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="userId" value="${flightPlan.uavId}"></td>
+                                            <td></td>
+                                            <td><input type="text" class="form" name="userId" value="${flightPlan.uavId}"></td>
                                         </tr>
-
+                                        <tr>
+                                            <td colspan="1"><input type="button" value="返回" class="layui-btn"  onClick="javascript :history.back(-1);"></td>
+                                        </tr>
                                     </table>
                                     <%--<button class="layui-btn">确定</button>--%>
                                     <%--<button class="layui-btn">返回</button>--%>

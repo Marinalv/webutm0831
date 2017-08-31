@@ -223,25 +223,7 @@ input[type=checkbox]:focus {
     color: #fff;
 }
 /*删除按钮与添加按钮样式*/
-.layui-btn {
-    display: inline-block;
-    height: 38px;
-    line-height: 38px;
-    padding: 0 18px;
-    background-color: #28b779;
-    color: #fff;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    opacity: .9;
-    filter: alpha(opacity=90);
-}
-.layui-btn {
-    margin-left: 10px;
-}
+
 .item input {
     height: 38px;
     line-height: 38px;
@@ -262,26 +244,60 @@ input[type=checkbox]:focus {
     padding:0;
 }/*添加页面样式*/
 table td {
-    padding: 5px;
+    padding: 3px;
+}
+.btn {
+    margin-left: 12%;
 }
 .layui-btn {
-    display: inline-block;
     height: 38px;
     line-height: 38px;
     padding: 0 18px;
     background-color:#28b779;
     color: #fff;
-    white-space: nowrap;
     text-align: center;
-    font-size: 14px;
     border: none;
     border-radius: 2px;
     cursor: pointer;
     opacity: .9;
     filter: alpha(opacity=90);
-    /*margin-left: 10%;*/
     margin-top: 15px;
 }
 .table-responsive {
     overflow-x: hidden;
+}
+.form {
+    width: 332px;
+    display: block;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+label {
+    float: left;
+    width: 146px;
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+    height: 48px;
+    line-height: 48px;
+}
+.toplist {
+    float: right;
+    list-style: none;
+    font-size: 14px;
+}
+.toplist li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
 }
