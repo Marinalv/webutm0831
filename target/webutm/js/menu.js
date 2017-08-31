@@ -40,3 +40,26 @@ $('.menu-button').toggle(function(){
 },function(){
     $('.content').css('width','100%');
 });
+
+//自适应屏幕大小
+// Copyright 2014-2015 Twitter, Inc.
+// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style');
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            '@-ms-viewport{width:auto!important}'
+        )
+    );
+    document.querySelector('head').appendChild(msViewportStyle)
+}
+
+//侧边栏与右侧的点击事件
+$(document).ready(function(){
+
+    $('.menu-button').toggle(function(){
+        $('.content').css('width','93%');
+    },function(){
+        $('.content').css('width','100%');
+    });
+});

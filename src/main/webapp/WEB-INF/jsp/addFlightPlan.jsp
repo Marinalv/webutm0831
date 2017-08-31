@@ -1,5 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
+  Versions: v0.1
   User: HDPC
   Date: 2017/8/10
   Time: 11:12
@@ -10,14 +11,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>添加飞行计划</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css"/>
+
+    <meta name="description" content="找飞机:添加飞行计划 内含导航栏、form表单、保存和返回按钮" />
+    <meta name="keywords" content="form表单、按钮" />
+    <meta name="author" content="Marina" />
+
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/nav.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/Table.css"/>
-    <script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Table.css"/>
+
 </head>
 <body>
 <jsp:include page="nav.jsp"/>
@@ -42,7 +49,6 @@
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive box-default form-inline no-footer scoller">
-
                         <div class="table-responsive box-default form-inline no-footer adduser">
                             <div class="adduser" id="content">
                                 <form action="${pageContext.request.contextPath}/flightPlan/addFlightPlan" method="post">
@@ -91,11 +97,8 @@
                                         <tr>
                                             <td colspan="1"><input type="submit" value="保存" class="layui-btn"></td>
                                             <td colspan="1"><input type="button" value="返回" class="layui-btn"  onClick="javascript :history.back(-1);"></td>
-
                                         </tr>
                                     </table>
-                                    <%--<button class="layui-btn">确定</button>--%>
-                                    <%--<button class="layui-btn">返回</button>--%>
                                 </form>
                             </div>
 
@@ -106,36 +109,15 @@
         </section>
     </div>
 </div>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/classie.js"></script>
-<script src="${pageContext.request.contextPath}/js/snap.svg-min.js"></script>
-<script src="${pageContext.request.contextPath}/js/toggleMenu.js"></script>
-<script src="${pageContext.request.contextPath}/js/menu.js"></script>
-<%--<script src="${pageContext.request.contextPath}/js/page.js"></script>--%>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/flightPlan.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/nav.js"></script>
-<script>
-    // Copyright 2014-2015 Twitter, Inc.
-    // Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style');
-        msViewportStyle.appendChild(
-            document.createTextNode(
-                '@-ms-viewport{width:auto!important}'
-            )
-        );
-        document.querySelector('head').appendChild(msViewportStyle)
-    }
-    $(document).ready(function(){
 
-        $('.menu-button').toggle(function(){
-            $('.content').css('width','93%');
-        },function(){
-            $('.content').css('width','100%');
-        });
-    });
-</script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/classie.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/snap.svg-min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/toggleMenu.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/menu.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/flightPlan.js"></script>
+
 </body>
 </html>
